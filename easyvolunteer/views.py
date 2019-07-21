@@ -66,6 +66,13 @@ def login(request):
 # 일반 회원 마이페이지
 def mypage(request):
     return render(request, 'mypage.html')
+# 일반 회원 마이페이지-나의현황
+def situation(request):
+    return render(request, 'situation.html')
+
+# 일반 회원 마이페이지-개인정보 수정
+def modify(request):
+    return render(request, 'modify.html')
 
 # 기관용 마이페이지
 def organ_mypage(request):
