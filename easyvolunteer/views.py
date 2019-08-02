@@ -84,8 +84,23 @@ def register(request):
 
 # 봉사활동을 선택할 수 있는 페이지
 def quest(request):
-    return render(request, 'quest.html')
-    
-# 회원이 포인트를 사용할 수 있는 페이지
+    return render(request, 'quest.html') 
+
+# 선택한 봉사활동 *설명* 페이지
+def quest_what(request):
+    return render(request, 'quest_what.html')
+
+# 회원이 상품선택하는 페이지-브랜드 선택
+def brands(request):
+    return render(request, 'brands.html')
+
+# 회원이 상품선택하는 페이지-상품!!! 선택
+def goods(request):
+    return render(request, 'goods.html')
+ 
+# 회원이 포인트를 사용 후 잔여포인트 페이지
 def point(request):
     return render(request, 'point.html')
+
+
+

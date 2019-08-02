@@ -1,0 +1,116 @@
+{% load staticfiles%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>쉬봉</title>
+
+  <!-- Font Awesome Icons -->
+  <link href="{% static 'vendor/fontawesome-free/css/all.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'css/shev.css' %}" rel="stylesheet" type="text/css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+  <!-- Plugin CSS -->
+  <link href="{% static 'vendor/magnific-popup/magnific-popup.css' %}" rel="stylesheet">
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="{% static 'css/creative.css' %}" rel="stylesheet">
+
+</head>
+
+<body id="spage">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">쉬봉</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">소개</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="{% url 'mypage' %}">MY Page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">로그인/회원가입</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="lay">
+      <div class="mypoint">
+          <p>나의 포인트: 20190809 point(임시)</p>
+          
+      </div>
+      
+      <div class ="brands"> <!--브랜드 이미지 누르면 넘어가는 html 만들어야됨-->
+          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/베라.png'%}"  ></a><div class="brand_name"> 베스킨 라빈스</div></article>
+          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/gs25.png'%}"  ></a><div class="brand_name"> GS25</div></article>
+          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/세븐일레븐.png'%}"  ></a><div class="brand_name"> 세븐일레븐</div></article>
+          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/cu.jpg'%}"  ></a><div class="brand_name"> CU</div></article>
+          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/ediya.jpg'%}"  ></a><div class="brand_name">EDIYA COFFEE</div></article>
+          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/STARBUCKS.jpg'%}"  ></a><div class="brand_name"> STARBUCKS COFFEE</div></article>
+          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/파리바게트.png'%}"  ></a><div class="brand_name"> 파리바게트</div></article>
+          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/투썸.png'%}"  ></a><div class="brand_name"> A Twosome Place</div></article>
+          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/cgv.png'%}"  ></a><div class="brand_name">CGV</div></article>
+          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/올리브영.jpg'%}"  ></a><div class="brand_name"> 올리브영</div></article>
+          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/자드.png'%}"  ></a><div class="brand_name"> 자연드림</div></article>
+          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/lalavla.png'%}"  ></a><div class="brand_name"> lalavla</div></article>
+          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/입생.png'%}"  ></a><div class="brand_name"> 입생로랑</div></article>
+          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/6365.png_860.png'%}"  ></a><div class="brand_name"> 베스킨 라빈스</div></article>
+          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/6365.png_860.png'%}"  ></a><div class="brand_name"> 베스킨 라빈스</div></article>
+          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/6365.png_860.png'%}"  ></a><div class="brand_name"> 베스킨 라빈스</div></article>
+          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/6365.png_860.png'%}"  ></a><div class="brand_name"> 베스킨 라빈스</div></article>
+          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/6365.png_860.png'%}"  ></a><div class="brand_name"> 베스킨 라빈스</div></article>
+          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/6365.png_860.png'%}"  ></a><div class="brand_name"> 베스킨 라빈스</div></article>
+          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/6365.png_860.png'%}"  ></a><div class="brand_name"> 베스킨 라빈스</div></article>
+          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/6365.png_860.png'%}"  ></a><div class="brand_name"> 베스킨 라빈스</div></article>
+          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/6365.png_860.png'%}"  ></a><div class="brand_name"> 베스킨 라빈스</div></article>
+
+          
+
+          
+      </div>
+      
+  </div>
+  
+ 
+
+
+  <footer class="bg-light py-5">
+      <div class="container">
+        <div class="small text-center text-muted">Copyright &copy; 2019 - Start Bootstrap</div>
+      </div>
+    </footer>
+  
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+  
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'js/creative.min.js' %}"></script>
+  
+  </body>
+  
+  </html>

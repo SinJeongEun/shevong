@@ -1,0 +1,55 @@
+.Quest_lay{
+    margin-top: 120px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 1500px;
+    width: 1400px;
+}
+
+/*봉사메인소개 틀*/
+.about
+/*봉사 한줄 광고*/
+.adver
+/*봉사이름*/
+.name
+/*봉사 장소*/
+.place
+
+/*봉사활동 자세히 페이지- 봉사사진*/
+.quest_what_img{
+    width: 200px;
+    height:500px;
+   
+}
+/*봉사 사진 틀 */
+.imggg{
+    padding-top:10px;
+    width: 220px;
+    height: 570px;
+
+    display:none;
+}
+
+
+.detail_1 .container{
+    width: 1000px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.term:nth-child(1){
+    align-self: stretch;
+    flex: 2 0 20px;
+}
+
+.term:nth-child(2){
+    align-self: stretch;
+    flex: 2 0 20px;
+}
+
+.term1:nth-child(3){
+    align-self: stretch;
+    flex: 2 0 20px;
+}

@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
+  <link rel="icon" type="image/gif/png" href="{%static 'img/logo.jpg'%}">
   <title>쉬봉</title>
 
   <!-- Font Awesome Icons -->
@@ -32,7 +32,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">쉬봉</a>
+      <a class="navbar-brand js-scroll-trigger" href="{% url 'main' %}">쉬봉</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -85,74 +85,10 @@
     </div>
   </section>
 
-  <!-- 마이페이지 -->
+
   
-  <section class="page-section" id="services">
-    {% block mypage %} <div class="container">
-      <h2 class="text-center mt-0">MY page</h2>
-      <hr class="divider my-4">
-      <div class="row">
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-           <a type="button" href="{% url 'quest' %}"><img class="quest" src="{% static 'img/6365.png_860.png'%}"  ></a> 
-            <br>
-            <h3 class="h4 mb-2" >퀘스트 목록</h3>
-            <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <a type="button" href="{% url 'point' %}"><img class="quest" src="{% static 'img/6365.png_860.png'%}"  ></a>
-            <br>
-            <h3 class="h4 mb-2">포인트 사용처</h3>
-            <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <a type="button" href="{% url 'situation' %}"><img class="quest" src="{% static 'img/6365.png_860.png'%}"  ></a>
-            <br>
-            <h3 class="h4 mb-2">나의 현황</h3>
-            <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 text-center">
-          <div class="mt-5">
-            <a type="button" href="{% url 'modify' %}"><img class="quest" src="{% static 'img/6365.png_860.png'%}"  ></a>
-            <br>
-            <h3 class="h4 mb-2">회원정보 수정하기</h3>
-            <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
-          </div>
-        </div>
-      </div>
-    </div>{% endblock %}
-  </section>
-
-
-  <!-- 로그인,회원가입 -->
-  <section class="page-section" id="contact">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h2 class="mt-0">Let's Get In Touch!</h2>
-          <hr class="divider my-4">
-          <p class="text-muted mb-5">Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-          <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-          <div>+1 (202) 555-0149</div>
-        </div>
-        <div class="col-lg-4 mr-auto text-center">
-          <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-          <!-- Make sure to change the email address in anchor text AND the link below! -->
-          <a class="d-block" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  
+ 
   <!-- Footer -->
   <footer class="bg-light py-5">
     <div class="container">
