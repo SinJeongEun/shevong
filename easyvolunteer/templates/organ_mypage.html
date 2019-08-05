@@ -1,5 +1,102 @@
-{% extends 'layout.html' %}
 {% load staticfiles%}
-{% block organ_mypage %}
-기업 마이페이지
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>쉬봉</title>
+
+  <!-- Font Awesome Icons -->
+  <link href="{% static 'vendor/fontawesome-free/css/all.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'css/shev.css' %}" rel="stylesheet" type="text/css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+  <!-- Plugin CSS -->
+  <link href="{% static 'vendor/magnific-popup/magnific-popup.css' %}" rel="stylesheet">
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="{% static 'css/creative.css' %}" rel="stylesheet">
+
+</head>
+
+<body id="spage">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="{% url 'main' %}">쉬봉</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="{% url 'quest' %}">퀘스트 목록</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="{% url 'brands' %}">포인트 사용처</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'mypage' %}">MY Page</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="{% url 'login' %}">로그인</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'select' %}">회원가입</a>
+            </li>
+        
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="page-section" id="services">
+     <div class="container">
+        <h2 class="text-center mt-0">MY page</h2>
+        <hr class="divider my-4">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+             <a type="button" href="{% url 'quest' %}"><img class="minimg" src="{% static 'img/6365.png_860.png'%}"  ></a> 
+              <br>
+              <h3 class="h4 mb-2" >봉사 공고한 목록</h3>
+              <p class="text-muted mb-0">,,,,,,,,,</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <a type="button" href="{% url 'point' %}"><img class="minimg" src="{% static 'img/6365.png_860.png'%}"  ></a>
+              <br>
+              <h3 class="h4 mb-2">???</h3>
+              <p class="text-muted mb-0">나의 포인트확인 가능, 기프티콘으로 교환가능사이트로 이동.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <a type="button" href="{% url 'situation' %}"><img class="minimg" src="{% static 'img/6365.png_860.png'%}"  ></a>
+              <br>
+              <h3 class="h4 mb-2">??</h3>
+              <p class="text-muted mb-0">Y나의 레벨과 봉사내역 확인 가능!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <a type="button" href="{% url 'modify' %}"><img class="minimg" src="{% static 'img/6365.png_860.png'%}"  ></a>
+              <br>
+              <h3 class="h4 mb-2">기관정보 수정하기</h3>
+              <p class="text-muted mb-0">정보수정</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+    </html>
