@@ -13,7 +13,7 @@
 
   <!-- Font Awesome Icons -->
   <link href="{% static 'vendor/fontawesome-free/css/all.css' %}" rel="stylesheet" type="text/css">
-  <link href="{% static 'css/shev.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'css/quest.css' %}" rel="stylesheet" type="text/css">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
@@ -58,7 +58,7 @@
       </div>
     </div>
   </nav>
-                                            <div class="Quest_lay">
+             <div class="Quest_lay">
                                                 <!--봉사카드-->
                                                 <div class="quests">
                                                     <section class="ftco-section">
@@ -69,27 +69,16 @@
                                                                 <div class="col-md-6 col-lg-3 ftco-animate">
                                                                     <div class="product">
                                                                         <!--봉사 이미지-->
-                                                                        <a href="#" class="img-prod">
-                                                                            <img class="img-fluid" src="{% static 'img/연탄.jpg'%}" alt="Colorlib Template">
+                                                                        <a href="{% url 'quest_what' %}"class="img-prod">
+                                                                            <img class="quest_img" src="{% static 'img/유기견.png'%}" alt="Colorlib Template">
                                                                                 <div class="overlay"></div>
                                                                             </a>
                                                                             <!--봉사 이름-->
                                                                             <div class="text py-3 pb-4 px-3 text-center">
                                                                                 <h3>
-                                                                                    <a href="#">연탄 나르기 봉사활동</a>
+                                                                                    <a href="#">유기견 센터봉사활동</a>
                                                                                 </h3>
-                                                                                <!--봉사 하러가기 버튼-->
-                                                                                <div class="bottom-area d-flex px-3">
-                                                                                    <div class="m-auto d-flex">
-                                                                                        <a
-                                                                                            href="#"
-                                                                                            class="add-to-cart d-flex justify-content-center align-items-center text-center">
-                                                                                            <span>
-                                                                                                <i class="ion-ios-menu">GO 쉬봉</i>
-                                                                                            </span>
-                                                                                        </a>
-                                                                                    </div>
-                                                                                </div>
+                                                                               
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -97,27 +86,16 @@
                                                                     <div class="col-md-6 col-lg-3 ftco-animate">
                                                                         <div class="product">
                                                                             <!--봉사 이미지-->
-                                                                            <a href="#" class="img-prod">
-                                                                                <img class="img-fluid" src="{% static 'img/연탄.jpg'%}" alt="Colorlib Template">
+                                                                            <a href="{% url 'quest_what' %}" class="img-prod">
+                                                                                <img class="quest_img"  src="{% static 'img/미용.jpg'%}" alt="Colorlib Template">
                                                                                     <div class="overlay"></div>
                                                                                 </a>
                                                                                 <!--봉사 이름-->
                                                                                 <div class="text py-3 pb-4 px-3 text-center">
                                                                                     <h3>
-                                                                                        <a href="#">연탄 나르기 봉사활동</a>
+                                                                                        <a href="{% url 'quest_what' %}">미용 봉사활동</a>
                                                                                     </h3>
-                                                                                    <!--봉사 하러가기 버튼-->
-                                                                                    <div class="bottom-area d-flex px-3">
-                                                                                        <div class="m-auto d-flex">
-                                                                                            <a
-                                                                                                href="#"
-                                                                                                class="add-to-cart d-flex justify-content-center align-items-center text-center">
-                                                                                                <span>
-                                                                                                    <i class="ion-ios-menu">GO 쉬봉</i>
-                                                                                                </span>
-                                                                                            </a>
-                                                                                        </div>
-                                                                                    </div>
+                                                                                   
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -126,26 +104,15 @@
                                                                             <div class="product">
                                                                                 <!--봉사 이미지-->
                                                                                 <a href="#" class="img-prod">
-                                                                                    <img class="img-fluid" src="{% static 'img/연탄.jpg'%}" alt="Colorlib Template">
+                                                                                    <img class="quest_img"  src="{% static 'img/농활.png'%}" alt="Colorlib Template">
                                                                                         <div class="overlay"></div>
                                                                                     </a>
                                                                                     <!--봉사 이름-->
                                                                                     <div class="text py-3 pb-4 px-3 text-center">
                                                                                         <h3>
-                                                                                            <a href="#">연탄 나르기 봉사활동</a>
+                                                                                            <a href="#">농촌 봉사활동</a>
                                                                                         </h3>
-                                                                                        <!--봉사 하러가기 버튼-->
-                                                                                        <div class="bottom-area d-flex px-3">
-                                                                                            <div class="m-auto d-flex">
-                                                                                                <a
-                                                                                                    href="#"
-                                                                                                    class="add-to-cart d-flex justify-content-center align-items-center text-center">
-                                                                                                    <span>
-                                                                                                        <i class="ion-ios-menu">GO 쉬봉</i>
-                                                                                                    </span>
-                                                                                                </a>
-                                                                                            </div>
-                                                                                        </div>
+                                                                                       
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -154,26 +121,15 @@
                                                                                 <div class="product">
                                                                                     <!--봉사 이미지-->
                                                                                     <a href="#" class="img-prod">
-                                                                                        <img class="img-fluid" src="{% static 'img/연탄.jpg'%}" alt="Colorlib Template">
+                                                                                        <img class="quest_img"  src="{% static 'img/석유.png'%}" alt="Colorlib Template">
                                                                                             <div class="overlay"></div>
                                                                                         </a>
                                                                                         <!--봉사 이름-->
                                                                                         <div class="text py-3 pb-4 px-3 text-center">
                                                                                             <h3>
-                                                                                                <a href="#">연탄 나르기 봉사활동</a>
+                                                                                                <a href="#">석유 청소 봉사활동</a>
                                                                                             </h3>
-                                                                                            <!--봉사 하러가기 버튼-->
-                                                                                            <div class="bottom-area d-flex px-3">
-                                                                                                <div class="m-auto d-flex">
-                                                                                                    <a
-                                                                                                        href="#"
-                                                                                                        class="add-to-cart d-flex justify-content-center align-items-center text-center">
-                                                                                                        <span>
-                                                                                                            <i class="ion-ios-menu">GO 쉬봉</i>
-                                                                                                        </span>
-                                                                                                    </a>
-                                                                                                </div>
-                                                                                            </div>
+                                                                                           
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -182,26 +138,16 @@
                                                                                     <div class="product">
                                                                                         <!--봉사 이미지-->
                                                                                         <a href="#" class="img-prod">
-                                                                                            <img class="img-fluid" src="{% static 'img/연탄.jpg'%}" alt="Colorlib Template">
+                                                                                            <img class="quest_img"  src="{% static 'img/선거.png'%}" alt="Colorlib Template">
                                                                                                 <div class="overlay"></div>
                                                                                             </a>
                                                                                             <!--봉사 이름-->
                                                                                             <div class="text py-3 pb-4 px-3 text-center">
                                                                                                 <h3>
-                                                                                                    <a href="#">연탄 나르기 봉사활동</a>
+                                                                                                    <a href="#">선거 도우미 봉사활동</a>
                                                                                                 </h3>
                                                                                                 <!--봉사 하러가기 버튼-->
-                                                                                                <div class="bottom-area d-flex px-3">
-                                                                                                    <div class="m-auto d-flex">
-                                                                                                        <a
-                                                                                                            href="#"
-                                                                                                            class="add-to-cart d-flex justify-content-center align-items-center text-center">
-                                                                                                            <span>
-                                                                                                                <i class="ion-ios-menu">GO 쉬봉</i>
-                                                                                                            </span>
-                                                                                                        </a>
-                                                                                                    </div>
-                                                                                                </div>
+                                                                                               
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
@@ -210,26 +156,15 @@
                                                                                         <div class="product">
                                                                                             <!--봉사 이미지-->
                                                                                             <a href="#" class="img-prod">
-                                                                                                <img class="img-fluid" src="{% static 'img/연탄.jpg'%}" alt="Colorlib Template">
+                                                                                                <img class="quest_img"  src="{% static 'img/벽화.jpg'%}" alt="Colorlib Template">
                                                                                                     <div class="overlay"></div>
                                                                                                 </a>
                                                                                                 <!--봉사 이름-->
                                                                                                 <div class="text py-3 pb-4 px-3 text-center">
                                                                                                     <h3>
-                                                                                                        <a href="#">연탄 나르기 봉사활동</a>
+                                                                                                        <a href="#">벽화그리기 봉사활동</a>
                                                                                                     </h3>
-                                                                                                    <!--봉사 하러가기 버튼-->
-                                                                                                    <div class="bottom-area d-flex px-3">
-                                                                                                        <div class="m-auto d-flex">
-                                                                                                            <a
-                                                                                                                href="#"
-                                                                                                                class="add-to-cart d-flex justify-content-center align-items-center text-center">
-                                                                                                                <span>
-                                                                                                                    <i class="ion-ios-menu">GO 쉬봉</i>
-                                                                                                                </span>
-                                                                                                            </a>
-                                                                                                        </div>
-                                                                                                    </div>
+                                                                                                    
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
@@ -238,7 +173,7 @@
                                                                                             <div class="product">
                                                                                                 <!--봉사 이미지-->
                                                                                                 <a href="#" class="img-prod">
-                                                                                                    <img class="img-fluid" src="{% static 'img/연탄.jpg'%}" alt="Colorlib Template">
+                                                                                                    <img class="quest_img"  src="{% static 'img/연탄.jpg'%}" alt="Colorlib Template">
                                                                                                         <div class="overlay"></div>
                                                                                                     </a>
                                                                                                     <!--봉사 이름-->
@@ -247,16 +182,7 @@
                                                                                                             <a href="#">연탄 나르기 봉사활동</a>
                                                                                                         </h3>
                                                                                                         <!--봉사 하러가기 버튼-->
-                                                                                                        <div class="bottom-area d-flex px-3">
-                                                                                                            <div class="m-auto d-flex">
-                                                                                                                <a
-                                                                                                                    href="#"
-                                                                                                                    class="add-to-cart d-flex justify-content-center align-items-center text-center">
-                                                                                                                    <span>
-                                                                                                                        <i class="ion-ios-menu">GO 쉬봉</i>
-                                                                                                                    </span>
-                                                                                                                </a>
-                                                                                                            </div>
+                                                                                                        
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </div>

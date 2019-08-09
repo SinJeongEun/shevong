@@ -1,33 +1,38 @@
 {% load staticfiles%}
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>쉬봉</title>
-
-  <!-- Font Awesome Icons -->
-  <link href="{% static 'vendor/fontawesome-free/css/all.css' %}" rel="stylesheet" type="text/css">
-  <link href="{% static 'css/shev.css' %}" rel="stylesheet" type="text/css">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
-
-  <!-- Plugin CSS -->
-  <link href="{% static 'vendor/magnific-popup/magnific-popup.css' %}" rel="stylesheet">
-
-  <!-- Theme CSS - Includes Bootstrap -->
-  <link href="{% static 'css/creative.css' %}" rel="stylesheet">
-
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Cocoon -Portfolio">
+    <meta name="keywords" content="Cocoon , Portfolio">
+    <meta name="author" content="Pharaohlab">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- ========== Title ========== -->
+    <title> Cocoon -Portfolio</title>
+    <!-- ========== Favicon Ico ========== -->
+    <!--<link rel="icon" href="fav.ico">-->
+    <!-- ========== STYLESHEETS ========== -->
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Fonts Icon CSS -->
+    <link href="{% static 'assets/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/et-line.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/ionicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/brands.css' %}" rel="stylesheet">
+    <!-- Carousel CSS -->
+    <link href="{% static 'assets/css/slick.css' %}" rel="stylesheet">
+    <!-- Magnific-popup -->
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/creative.css' %}" rel="stylesheet">
+    <link href="{% static 'css/brands.css' %}" rel="stylesheet">
+    <link href="{% static 'css/shev.css' %}" rel="stylesheet">
 </head>
 
-<body id="spage">
+
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
@@ -39,7 +44,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto my-2 my-lg-0">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="{% url 'quest' %}">퀘스트 목록</a>
+            <a class="nav-link-scroll-trigger" href="{% url 'quest' %}">퀘스트 목록</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="{% url 'brands' %}">포인트 사용처</a>
@@ -60,63 +65,201 @@
   </nav>
 
 
-  <div class="lay">
+  <body>
       <div class="mypoint">
           <p>나의 포인트: 20190809 point(임시)</p>
           
       </div>
-      
-      <div class ="brands"> <!--브랜드 이미지 누르면 넘어가는 html 만들어야됨-->
-          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/베라.png'%}"  ></a><div class="brand_name"> 베스킨 라빈스</div></article>
-          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/gs25.png'%}"  ></a><div class="brand_name"> GS25</div></article>
-          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/세븐일레븐.png'%}"  ></a><div class="brand_name"> 세븐일레븐</div></article>
-          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/cu.jpg'%}"  ></a><div class="brand_name"> CU</div></article>
-          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/ediya.jpg'%}"  ></a><div class="brand_name">EDIYA COFFEE</div></article>
-          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/STARBUCKS.jpg'%}"  ></a><div class="brand_name"> STARBUCKS COFFEE</div></article>
-          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/파리바게트.png'%}"  ></a><div class="brand_name"> 파리바게트</div></article>
-          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/투썸.png'%}"  ></a><div class="brand_name"> A Twosome Place</div></article>
-          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/cgv.png'%}"  ></a><div class="brand_name">CGV</div></article>
-          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/올리브영.jpg'%}"  ></a><div class="brand_name"> 올리브영</div></article>
-          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/자드.png'%}"  ></a><div class="brand_name"> 자연드림</div></article>
-          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/lalavla.png'%}"  ></a><div class="brand_name"> lalavla</div></article>
-          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/입생.png'%}"  ></a><div class="brand_name"> 입생로랑</div></article>
-          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/6365.png_860.png'%}"  ></a><div class="brand_name"> 베스킨 라빈스</div></article>
-          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/6365.png_860.png'%}"  ></a><div class="brand_name"> 베스킨 라빈스</div></article>
-          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/6365.png_860.png'%}"  ></a><div class="brand_name"> 베스킨 라빈스</div></article>
-          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/6365.png_860.png'%}"  ></a><div class="brand_name"> 베스킨 라빈스</div></article>
-          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/6365.png_860.png'%}"  ></a><div class="brand_name"> 베스킨 라빈스</div></article>
-          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/6365.png_860.png'%}"  ></a><div class="brand_name"> 베스킨 라빈스</div></article>
-          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/6365.png_860.png'%}"  ></a><div class="brand_name"> 베스킨 라빈스</div></article>
-          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/6365.png_860.png'%}"  ></a><div class="brand_name"> 베스킨 라빈스</div></article>
-          <article class="one_brand"><a type="button" href="{% url 'situation' %}"><img class="brand_img" src="{% static 'img/6365.png_860.png'%}"  ></a><div class="brand_name"> 베스킨 라빈스</div></article>
-
-          
-
-          
+      <div class="col-lg-10 col-md-9 col-12 body_block  align-content-center">
+          <div class="portfolio">
+              <div class="container-fluid">
+                  <!--=================== masaonry portfolio start====================-->
+                  <div class="grid img-container justify-content-center no-gutters" style="position: relative; height:4298.4px;"> 
+                      <div class="grid-sizer col-sm-12 col-md-6 col-lg-3"></div>
+                      <div class="grid-item branding  col-sm-12 col-md-6 col-lg-3" style="position: absolute; left: 0%; top: 0px;">
+                          <a href="assets/img/portfolio/home-port1.png" title="project name 1">
+                              <div class="project_box_one">
+                                  <img src="{% static 'img/올리브영.jpg' %}" alt="pro1" />
+                                  <div class="product_info">
+                                      <div class="product_info_text">
+                                          <div class="product_info_text_inner">
+                                              <i class="ion ion-plus"></i>
+                                              <h4>올리브영</h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="grid-item  branding architecture  col-sm-12 col-md-6" style="position: absolute; left: 0%; top: 250px;">
+                          <a href="assets/img/portfolio/home-port2.png" title="project name 2">
+                              <div class="project_box_one">
+                                  <img src="{% static 'img/베라.png' %}" alt="pro1" />
+                                  <div class="product_info">
+                                      <div class="product_info_text">
+                                          <div class="product_info_text_inner">
+                                              <i class="ion ion-plus"></i>
+                                              <h4>베스킨 라빈스</h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="grid-item  design col-sm-12 col-md-6 col-lg-3" style="position: absolute; left: 0%; top: 740px;">
+                          <a href="assets/img/portfolio/home-port3.png" title="project name 5">
+                              <div class="project_box_one">
+                                  <img src="{% static 'img/입생.png' %}" alt="pro1" />
+                                  <div class="product_info">
+                                      <div class="product_info_text">
+                                          <div class="product_info_text_inner">
+                                              <i class="ion ion-plus"></i>
+                                              <h4>입생로랑</h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="grid-item  photography design col-sm-12 col-md-6 col-lg-3" style="position: absolute; left: 0%; top: 1786px;">
+                          <a href="assets/img/portfolio/home-port4.png" title="project name 5">
+                              <div class="project_box_one">
+                                  <img src="{% static 'img/자드.png' %}" alt="pro1" />
+                                  <div class="product_info">
+                                      <div class="product_info_text">
+                                          <div class="product_info_text_inner">
+                                              <i class="ion ion-plus"></i>
+                                              <h4>자연드림</h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="grid-item  branding photography  col-sm-12 col-md-6 col-lg-3" style="position: absolute; left: 0%; top: 2451px;">
+                          <a href="assets/img/portfolio/home-port5.png" title="project name 5">
+                              <div class="project_box_one">
+                                  <img src="{% static 'img/투썸.png' %}"alt="pro1" />
+                                  <div class="product_info">
+                                      <div class="product_info_text">
+                                          <div class="product_info_text_inner">
+                                              <i class="ion ion-plus"></i>
+                                              <h4>투썸플레이스</h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="grid-item   architecture design col-sm-12 col-md-6 col-lg-3" style="position: absolute; left: 0%; top: 1051px;">
+                          <a href="assets/img/portfolio/home-port6.png" title="project name 5">
+                              <div class="project_box_one">
+                                  <img src="{% static 'img/파리바게트.png' %}" alt="pro1" />
+                                  <div class="product_info">
+                                      <div class="product_info_text">
+                                          <div class="product_info_text_inner">
+                                              <i class="ion ion-plus"></i>
+                                              <h4>파리바게트</h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="grid-item  photography architecture col-sm-12 col-md-6 col-lg-3" style="position: absolute; left: 0%; top: 3541px;">
+                          <a href="assets/img/portfolio/home-port7.png" title="project name 5">
+                              <div class="project_box_one">
+                                  <img src="{% static 'img/cgv.png' %}" alt="pro1" />
+                                  <div class="product_info">
+                                      <div class="product_info_text">
+                                          <div class="product_info_text_inner">
+                                              <i class="ion ion-plus"></i>
+                                              <h4>CGV</h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="grid-item  branding design  col-sm-12 col-md-6 col-lg-3" style="position: absolute; left: 0%; top: 4086px;">
+                          <a href="assets/img/portfolio/home-port8.png" title="project name 5">
+                              <div class="project_box_one">
+                                  <img src="{% static 'img/cu.jpg' %}" alt="pro1" />
+                                  <div class="product_info">
+                                      <div class="product_info_text">
+                                          <div class="product_info_text_inner">
+                                              <i class="ion ion-plus"></i>
+                                              <h4>CU</h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="grid-item architecture  col-sm-12 col-md-6 col-lg-6" style="position: absolute; left: 0%; top: 4630px;">
+                          <a href="assets/img/portfolio/home-port9.png" title="project name 4">
+                              <div class="project_box_one">
+                                  <img src="{% static 'img/ediya.jpg' %}" alt="pro1" />
+                                  <div class="product_info">
+                                      <div class="product_info_text">
+                                          <div class="product_info_text_inner">
+                                              <i class="ion ion-plus"></i>
+                                              <h4>이디야 커피</h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+                  </div>
+                  <!--=================== masaonry portfolio end====================-->
+              
+              </div>
+          </div>
       </div>
-      
+      <!--=================== content body end ====================-->
   </div>
-  
- 
-
-
-  <footer class="bg-light py-5">
-      <div class="container">
-        <div class="small text-center text-muted">Copyright &copy; 2019 - Start Bootstrap</div>
-      </div>
-    </footer>
-  
-    <!-- Bootstrap core JavaScript -->
-    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-  
-    <!-- Plugin JavaScript -->
-    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
-    <script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
-  
-    <!-- Custom scripts for this template -->
-    <script src="{% static 'js/creative.min.js' %}"></script>
-  
+</div>
   </body>
+    <!-- Footer -->
+<footer class="bg-light py-5">
+        <div class="container">
+          <div class="small text-center text-muted">Copyright &copy; 2019 - Start Bootstrap</div>
+        </div>
+      </footer>
+ <!-- Bootstrap core JavaScript -->
+ <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+ <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+ <!-- Plugin JavaScript -->
+ <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+ <script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+
+ <!-- Custom scripts for this template -->
+ <script src="{% static 'js/creative.min.js' %}"></script>
+
+<!-- jquery -->
+<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+<!-- bootstrap -->
+<script src="{% static 'assets/js/popper.js' %}"></script>
+<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+<!--slick carousel -->
+<script src="{% static 'assets/js/slick.min.js' %}"></script>
+<!--Portfolio Filter-->
+<script src="{% static 'assets/js/imgloaded.js' %}"></script>
+<script src="{% static 'assets/js/isotope.js' %}"></script>
+<!-- Magnific-popup -->
+<script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+<!--Counter-->
+<script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+<!-- WOW JS -->
+<script src="{% static 'assets/js/wow.min.js' %}"></script>
+<!-- Custom js -->
+<script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+</html>
+      
+  
   
   </html>

@@ -13,7 +13,7 @@
 
   <!-- Font Awesome Icons -->
   <link href="{% static 'vendor/fontawesome-free/css/all.css' %}" rel="stylesheet" type="text/css">
-  <link href="{% static 'css/shev.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'css/quest_what.css' %}" rel="stylesheet" type="text/css">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
@@ -24,7 +24,17 @@
 
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="{% static 'css/creative.css' %}" rel="stylesheet">
-
+ <style>
+ @font-face {
+    font-family: 'BMHANNAPro';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .font{
+    font-family: 'BMHANNAPro';
+  }
+ </style>
 </head>
 
 
@@ -57,7 +67,7 @@
       </div>
     </div>
   </nav>
-     <div class="Quest_lay">
+     <div class="Quest_lay font">
 
             <section class="home_banner_area">
                     <div class="banner_inner">
@@ -66,9 +76,9 @@
                                 <div class="col-lg-6">
                                     <!--봉사활동 내용-->
                                     <div class="about">
-                                        <h4 class="adver">집도 따뜻 ! 마음도 따뜻 !</h4>
-                                        <h1 class="name">연탄 나르기 봉사활동</h1>
-                                        <h5 class="place">장소: oo ooo oooo oo ooo</h5>
+                                        <h4 class="adver font">집도 따뜻 ! 마음도 따뜻 !</h4>
+                                        <h1 class="name font">연탄 나르기 봉사활동</h1><hr>
+                                        <h5 class="place font">장소: oo ooo oooo oo ooo</h5>
                                         <div class="social_icons my-5">   <!--**************************여기에 뭐가 들어가면 좋을지 상의해보기********-->
                                             <a href="#"><i class="ti-twitter"></i></a>
                                             <a href="#"><i class="ti-skype"></i></a>
@@ -82,44 +92,40 @@
                                 <div class="betweennnnnnnnn"></div><!--사진 배열 밀리기위해 일부러함 상관 X-->
                                 <div class="col-lg-4">
                                    
-                                    <img class="quest_what_img" src="{% static 'img/연탄.jpg'%}" alt="">
+                                    <img class="quest_what_img" src="{% static 'img/연탄아이콘.jpg'%}" alt="">
                                     
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="detail_1">
+                        <!--참여 가능한 레벨-->
+
+                            <div class="term">
+                            <h3 class="font"><span class="counter"></span>LV.1 이상</h3>
+                            <p>참여 가능 레벨</p>
+                            </div>
+                            
+                        <!--예상 소요시간  -->
+                       
+                            <div class="term">
+                                <h3 class="font"><span class="counter"></span>3 hours</h3>
+                                <p>예상 소요시간</p>
+                            </div>
+                        
+                        <!--제공 포인트  -->
+                        
+                            <div class="term">
+                                <h3 class="font"><span class="counter"></span>170 POINT</h3>
+                                <p>제공 포인트</p>
+                            </div>
+                     
+                            
+                    </div>
+                
                     
                 </section>
-                <!--================ End Home Banner Area =================-->
-            
-                <!--================ Start Statistics Area =================-->
-                
-                        <div class="detail_1">
-                            <!--참여 가능한 레벨-->
 
-                                <div class="term">
-                                <h3><span class="counter"></span>LV.1 이상</h3>
-                                <p>참여 가능 레벨</p>
-                                </div>
-                                
-                            <!--예상 소요시간  -->
-                           
-                                <div class="term">
-                                    <h3><span class="counter"></span>3 hours</h3>
-                                    <p>예상 소요시간</p>
-                                </div>
-                            
-                            <!--제공 포인트  -->
-                            
-                                <div class="term">
-                                    <h3><span class="counter"></span>170 POINT</h3>
-                                    <p>제공 포인트</p>
-                                </div>
-                         
-                                
-                        </div>
-                    
-        
 
 </div>
 <!-- Footer -->
